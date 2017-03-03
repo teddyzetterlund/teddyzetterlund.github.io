@@ -33,5 +33,14 @@
     <p><strong>Last updated:</strong> Mars 1st, 2017.</p>
 
     <p>Inspired by <a href="http://nownownow.com/about">Derek Sivers now page</a>.</p>
+
+    <script>
+      var currentHour = new Date().getHours();
+      var isDarkHour = currentHour < 7 || currentHour > 21;
+
+      if (isDarkHour) {
+        document.body.classList.add('dark-theme');
+      }
+    </script>
   </body>
 </html>

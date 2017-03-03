@@ -66,5 +66,14 @@
     </ul>
 
     <p>Send me an <a href="mailto:teddy.zetterlund@gmail.com">email</a>, if you’d like to chat.</p>
+
+    <script>
+      var currentHour = new Date().getHours();
+      var isDarkHour = currentHour < 7 || currentHour > 21;
+
+      if (isDarkHour) {
+        document.body.classList.add('dark-theme');
+      }
+    </script>
   </body>
 </html>
