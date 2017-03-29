@@ -1,6 +1,8 @@
 {
   "hosting": {
     "public": "public",
+    "cleanUrls": true,
+    "trailingSlash": false,
     "headers": [{
       "source": "**/*.@(js|css)",
       "headers": [{
