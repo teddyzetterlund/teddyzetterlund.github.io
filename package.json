@@ -5,7 +5,7 @@
   "scripts": {
     "clean": "rm -rf public",
     "copy": "cp -r source public",
-    "critical": "for f in source/*.html; do ./node_modules/.bin/critical $npm_package_config_critical $f >| public/${f#*/}; done",
+    "critical": "for f in source/*.html; do critical $npm_package_config_critical $f >| public/${f#*/}; done",
     "start": "npm run clean && npm run copy && npm run critical"
   },
   "devDependencies": {
