@@ -6,9 +6,11 @@
     "clean": "rm -rf public",
     "copy": "cp -r source public",
     "critical": "for f in source/*.html; do critical $npm_package_config_critical $f >| public/${f#*/}; done",
-    "start": "npm run clean && npm run copy && npm run critical"
+    "precache": "sw-precache --root=public",
+    "start": "npm run clean && npm run copy && npm run critical && npm run precache"
   },
   "devDependencies": {
-    "critical": "^0.8.4"
+    "critical": "^0.8.4",
+    "sw-precache": "^5.1.0"
   }
 }
