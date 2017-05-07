@@ -6,6 +6,7 @@
     "clean": "rm -rf public",
     "copy": "cp -r source public",
     "critical": "for f in source/*.html; do critical $npm_package_config_critical $f >| public/${f#*/}; done",
+    "deploy": "firebase deploy",
     "precache": "sw-precache --root=public",
     "start": "npm run clean && npm run copy && npm run critical && npm run precache"
   },
