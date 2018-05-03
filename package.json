@@ -3,11 +3,10 @@
     "critical": "--base source --inline true --minify true"
   },
   "scripts": {
-    "clean": "rm -rf public",
-    "copy": "cp -r source public",
-    "critical": "for f in source/*.html; do critical $npm_package_config_critical $f >| public/${f#*/}; done",
-    "deploy": "firebase deploy",
-    "precache": "sw-precache --root=public",
+    "clean": "rm -rf dist",
+    "copy": "cp -r source dist",
+    "critical": "for f in source/*.html; do critical $npm_package_config_critical $f >| dist/${f#*/}; done",
+    "precache": "sw-precache --root=dist",
     "start": "npm run clean && npm run copy && npm run critical && npm run precache"
   },
   "devDependencies": {
