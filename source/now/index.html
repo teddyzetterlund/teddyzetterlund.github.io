@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+
+    <title>Hi, I'm Teddy – What I'm doing now</title>
+
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="/styles.css">
+    <style>body { max-width: 480px; }</style>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M78KKH3');</script>
+    <!-- End Google Tag Manager -->
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M78KKH3"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <h1>What I'm doing now</h1>
+
+    <p>
+      <strong>Personal</strong> — Taking last spring's biking to the next level!
+      Well, not really, but we'll bring our bikes with us to different places.
+    </p>
+
+    <p>
+      <strong>Creative</strong> — Planning a 1-day experiental course on Product
+      Development, optimized for learning with lots of hands on moments.
+    </p>
+
+    <p>
+      <strong>Playing</strong> — Ni No Kuni got a successor, so that's what I've
+      played for the last 50 hours on my PlayStation 4. I loved the first one,
+      <a href="https://medium.com/@teddyzetterlund/ni-no-kuni-e8cccd09e3d4">as
+        you can see here</a>.
+    </p>
+
+    <p>
+      <strong>Reading</strong> — The Satir Model and some older books on Agile
+      Software Development is mainly what I'm reading right now.
+    </p>
+
+    <p>
+      You will always find an updated view of
+      <a href="https://www.goodreads.com/teddyzetterlund">my reading list at Goodreads</a>.
+    </p>
+
+    <p><strong>Last updated:</strong> <a href="https://goo.gl/87MQqn">April 30th, 2018</a>.</p>
+
+    <p>Inspired by <a href="http://nownownow.com/about">Derek Sivers now page</a>.</p>
+
+    <script>
+      var currentHour = new Date().getHours();
+      var isDarkHour = currentHour < 7 || currentHour > 21;
+
+      if (isDarkHour) {
+        document.body.classList.add('dark-theme');
+      }
+    </script>
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker('/service-worker.js');
+        });
+      }
+    </script>
+  </body>
+</html>
